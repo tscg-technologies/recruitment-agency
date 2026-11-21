@@ -1,0 +1,212 @@
+/* ==========================================================================
+   RECRUITMENT AGENCY — RESPONSIVE STYLES
+   Mobile, Tablet, Desktop Breakpoints
+   ========================================================================== */
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1320px;
+  }
+}
+
+/* Laptop / Desktop (max-width: 1199px) */
+@media (max-width: 1199px) {
+  .hero-title {
+    font-size: 2.75rem;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+    gap: 1.75rem;
+  }
+  .search-form-grid {
+    grid-template-columns: 1.5fr 1.2fr 1.2fr auto;
+  }
+}
+
+/* Tablet (max-width: 991px) */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust-bar {
+    justify-content: center;
+  }
+
+  .audience-cards-container {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+
+  .search-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .search-form-grid .btn {
+    grid-column: span 2;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-col:first-child {
+    grid-column: span 2;
+  }
+
+  .dashboard-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pipeline-stage-bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .subpage-hero h1 {
+    font-size: 2rem;
+  }
+
+  .subpage-hero {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .top-notice-bar {
+    display: none; /* Hide top bar on mobile to prioritize screen space */
+  }
+
+  .header-actions {
+    display: none; /* In mobile, CTAs are placed inside mobile navigation drawer */
+  }
+
+  .search-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-form-grid .btn {
+    grid-column: span 1;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-col:first-child {
+    grid-column: span 1;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .job-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .pipeline-stage-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.875rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .audience-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .industry-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Very Small Mobile (360px) */
+@media (max-width: 360px) {
+  html {
+    font-size: 15px;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,49 @@
+/* ==========================================================================
+   RECRUITMENT AGENCY — ANIMATIONS & ACCESSIBILITY
+   Subtle Transitions, Keyframes, Reduced Motion
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(40, 166, 154, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(40, 166, 154, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 166, 154, 0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.card-hover-effect {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+}
+
+/* Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
