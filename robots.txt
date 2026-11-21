@@ -1,0 +1,6 @@
+# Robots.txt for Generic Recruitment Agency Demonstration Website
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://demo-recruitment-agency.example.com/sitemap.xml
